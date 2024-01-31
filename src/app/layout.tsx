@@ -16,7 +16,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main className="px-2 md:px-16 md:py-2 text-textPrimary">
+          {/* navbar */}
+          <section className="flex space-x-4">
+            {/* sidebar */}
+            {children}
+            {/* football news */}
+          </section>
+        </main>
+      </body>
     </html>
   );
 }
