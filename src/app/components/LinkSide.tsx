@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-
+// definir un type
 type linkProps={
     href:string,
     src:string,
