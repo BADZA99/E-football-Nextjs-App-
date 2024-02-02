@@ -8,7 +8,7 @@ const News = async () => {
 
     const newsData: newsType[] = getNews.articles;
 
-    console.log(newsData);
+    // console.log(newsData);
 
     return (
         <div className="w-[350px] bg-[rgb(40,46,58)] rounded-md px-2 md:px-6 py-2">
