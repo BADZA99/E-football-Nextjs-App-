@@ -34,9 +34,9 @@ export const getMatchesFootballFinished= async ()=>{
 
 }
 
-export const getNewsInfo= async ()=>{
-    const newsData=await fetch(`https://newsapi.org/v2/everything?apikey=${process.env.API_TOKEN_NEWS}&q=soccer1pageSize=5`,{next:{revalidate:30}})
-    return newsData.json()
+export const getNewsInfo = async () => {
+  const newsData = await fetch(`https://newsapi.org/v2/everything?apiKey=${process.env.API_TOKEN_NEWS}&q=soccer&pageSize=5`,{next:{revalidate:30}})
+  return newsData.json()
 }
 
 // filter league

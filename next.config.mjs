@@ -26,6 +26,24 @@ const nextConfig = {
         port: "",
         pathname: "/*/**",
       },
+      {
+        protocol: "https",
+        hostname: "i.kinja-img.com",
+        port: "",
+        pathname: "/*/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.cnet.com",
+        port: "",
+        pathname: "/*/**",
+      },
+      {
+        protocol: "https",
+        hostname: "media.npr.org",
+        port: "",
+        pathname: "/*/**",
+      },
     ],
   },
 };
