@@ -9,6 +9,8 @@ export default  async function Home() {
    const matchesDatas = getDatas?.matches;
    const matchesDatasFinished = getDatasFinished?.matches;
 
+   console.log(matchesDatas, matchesDatasFinished);
+
  
   
   const nd=new Date();

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { FC } from "react";
 import { matchesType } from "../../../type";
+import LeagueTable from "./LeagueTable";
 
 const Status = ({
     matchesList,
@@ -26,7 +27,7 @@ const Status = ({
             today
           </button>
           <button
-            className={`px-2 py-1 text-primary text-xs md:text-xs rounded-md ${
+            className={`px-2 py-1 text-primary text-sm rounded-md  ${
               statusMatch === "FINISHED"
                 ? "bg-teal-400 font-semibold"
                 : "bg-slate-500 font-regular"
@@ -40,24 +41,21 @@ const Status = ({
           {statusMatch === "TODAY"
             ? matchesList?.map((data) => (
                 <div key={data.id}>
-                  ppp
-                  {data?.status === "TIMED" && <p>league</p>}
+                  {data?.status === "TIMED" && <LeagueTable data={data} />}
                 </div>
               ))
             : null}
           {statusMatch === "FINISHED"
             ? matchesList?.map((data) => (
                 <div key={data.id}>
-                  ppp
-                  {data?.status === "FINISHED" && <p>league</p>}
+                  {data?.status === "FINISHED" && <LeagueTable data={data} />}
                 </div>
               ))
             : null}
-          {statusMatch === "TODAY"
-            ? matchesList?.map((data) => (
-                 <div key={data.id}>
-                  ppp
-                  {data?.status === "FINISHED" && <p>league</p>}
+          {statusMatch === "FINISHED"
+            ? matchesListFinished?.map((data) => (
+                <div key={data.id}>
+                  <LeagueTable data={data} />
                 </div>
               ))
             : null}
