@@ -7,7 +7,7 @@ const LaLiga = async () => {
 
   return (
     <div className='w-[600px]'>
-      {getLaLiga.map((data) => (
+      {getLaLiga?.map((data) => (
         <div key={data.id}>
           <LeagueTable data={data} />
         </div>

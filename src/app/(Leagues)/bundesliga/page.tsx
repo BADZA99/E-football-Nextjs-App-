@@ -4,9 +4,10 @@ import LeagueTable from "@/app/components/LeagueTable";
 
 const Bundesliga = async () => {
   const getBundesliga = await filterLeague('Bundesliga')
+
   return (
     <div className='w-[600px]'>
-      {getBundesliga.map((data) => (
+      {getBundesliga?.map((data) => (
         <div key={data.id}>
           <LeagueTable data={data} />
         </div>

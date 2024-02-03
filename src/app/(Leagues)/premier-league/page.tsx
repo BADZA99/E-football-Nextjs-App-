@@ -6,7 +6,7 @@ const English = async () => {
 
   return (
     <div className='w-[600px]'>
-      {getEnglishLeague.map((data) => (
+      {getEnglishLeague?.map((data) => (
         <div key={data.id}>
           <LeagueTable data={data} />
         </div>
